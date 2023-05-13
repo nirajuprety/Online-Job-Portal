@@ -15,7 +15,7 @@ namespace WebApplication1.Controllers
         private OnlineJobDbEntities db = new OnlineJobDbEntities();
 
         // GET: CountryTables
-        public ActionResult Index()
+        public ActionResult Index() 
         {
             return View(db.CountryTables.ToList());
         }
