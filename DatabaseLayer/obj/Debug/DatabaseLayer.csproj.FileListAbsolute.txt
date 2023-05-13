@@ -1,0 +1,12 @@
+D:\aspDotnet\project\OnlineJobPortal\Project1\WebApplication1\DatabaseLayer\bin\Debug\DatabaseLayer.dll.config
+D:\aspDotnet\project\OnlineJobPortal\Project1\WebApplication1\DatabaseLayer\bin\Debug\DatabaseLayer.dll
+D:\aspDotnet\project\OnlineJobPortal\Project1\WebApplication1\DatabaseLayer\bin\Debug\DatabaseLayer.pdb
+D:\aspDotnet\project\OnlineJobPortal\Project1\WebApplication1\DatabaseLayer\bin\Debug\EntityFramework.dll
+D:\aspDotnet\project\OnlineJobPortal\Project1\WebApplication1\DatabaseLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\aspDotnet\project\OnlineJobPortal\Project1\WebApplication1\DatabaseLayer\bin\Debug\EntityFramework.xml
+D:\aspDotnet\project\OnlineJobPortal\Project1\WebApplication1\DatabaseLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\aspDotnet\project\OnlineJobPortal\Project1\WebApplication1\DatabaseLayer\obj\Debug\DatabaseLayer.csproj.AssemblyReference.cache
+D:\aspDotnet\project\OnlineJobPortal\Project1\WebApplication1\DatabaseLayer\obj\Debug\DatabaseLayer.csproj.CoreCompileInputs.cache
+D:\aspDotnet\project\OnlineJobPortal\Project1\WebApplication1\DatabaseLayer\obj\Debug\DatabaseLayer.csproj.CopyComplete
+D:\aspDotnet\project\OnlineJobPortal\Project1\WebApplication1\DatabaseLayer\obj\Debug\DatabaseLayer.dll
+D:\aspDotnet\project\OnlineJobPortal\Project1\WebApplication1\DatabaseLayer\obj\Debug\DatabaseLayer.pdb

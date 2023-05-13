@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="aa1634330d614ea78d9a1017823c7112" Name="Diagram1">
+        <EntityTypeShape EntityType="OnlineJobDbModel.AccountStatusTable" Width="1.5" PointX="1.5" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJobDbModel.CertificateTable" Width="1.5" PointX="8.25" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJobDbModel.CompanyTable" Width="1.5" PointX="9" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJobDbModel.CountryTable" Width="1.5" PointX="0.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJobDbModel.CurrentJobStatusTable" Width="1.5" PointX="3.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJobDbModel.EducationTable" Width="1.5" PointX="3" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJobDbModel.EmployeesTable" Width="1.5" PointX="6" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJobDbModel.EventTable" Width="1.5" PointX="11.25" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJobDbModel.JobApplyStatusTable" Width="1.5" PointX="9" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJobDbModel.JobApplyTable" Width="1.5" PointX="11.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJobDbModel.JobCategoryTable" Width="1.5" PointX="3.75" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJobDbModel.JobStatusTable" Width="1.5" PointX="9" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJobDbModel.JobTable" Width="1.5" PointX="6" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJobDbModel.LanguageTable" Width="1.5" PointX="8.25" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJobDbModel.PostJobTable" Width="1.5" PointX="11.25" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJobDbModel.SkillTable" Width="1.5" PointX="8.25" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJobDbModel.UsersTable" Width="1.5" PointX="3.75" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJobDbModel.UserTypeTable" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineJobDbModel.WorkExperienceTable" Width="1.5" PointX="11.25" PointY="5.5" IsExpanded="true" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_UsersTable_AccountStatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_CertificateTable_EmployeesTable" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_CompanyTable_UsersTable" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_EventTable_CompanyTable" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_PostJobTable_CompanyTable" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_EducationTable_CountryTable" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_EmployeesTable_CountryTable" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_WorkExperienceTable_CountryTable" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_EmployeesTable_CurrentJobStatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_EducationTable_EmployeesTable" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_EmployeesTable_JobCategoryTable" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_EmployeesTable_UsersTable" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_JobApplyTable_EmployeesTable" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_LanguageTable_EmployeesTable" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_SkillTable_EmployeesTable" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_WorkExperienceTable_EmployeesTable" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_EventTable_UsersTable" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_JobApplyTable_JobApplyStatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_JobTable_JobCategoryTable" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_PostJobTable_JobCategoryTable" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_PostJobTable_JobStatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_PostJobTable_JobTable" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineJobDbModel.FK_PostJobTable_UsersTable" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
