@@ -1,15 +1,17 @@
-﻿@model IEnumerable<DatabaseLayer.CountryTable>
+﻿@model IEnumerable<DatabaseLayer.JobCategoryTable>
 
 @{
     ViewBag.Title = "Index";
 }
+
 <div class="section-top-border col-md-7">
-    <h3 class="mb-30">All cities @Html.ActionLink("New City", "Create", null, new { @class = "btn btn-default", @style = "float : right" })</h3>
+    <h3 class="mb-30">All Job Categories @Html.ActionLink("New Job Category", "Create", null, new { @class = "btn btn-default", @style = "float : right" })</h3>
     <div class="progress-table-wrap" style="overflow-x: hidden;">
         <div class="progress-table table-sm">
             <div class="table-head">
                 <div class="serial">#</div>
-                <div class="country">Cities</div>
+                <div class="country">Job Category</div>
+                <div class="country ">Description</div>
                 <div class="visit">Actions</div>
             </div>
             @{
@@ -20,11 +22,11 @@
             {
                 <div class="table-row">
                     <div class="serial">@counter.ToString("D2")</div>
-                    <div class="country">@Html.DisplayFor(modelItem => item.Country)</div>
+                    <div class="country">@Html.DisplayFor(modelItem => item.JobCategory)</div>
+                    <div class="country">@Html.DisplayFor(modelItem => item.Description)</div>
                     <div class="country">
-                        @Html.ActionLink("Edit", "Edit", new { id = item.CountryID }, new { @class = "genric-btn primary" }) |
-                        @Html.ActionLink("Details", "Details", new { id = item.CountryID }, new { @class = "genric-btn info" }) |
-                        @Html.ActionLink("Delete", "Delete", new { id = item.CountryID }, new { @class = "genric-btn danger" })
+                        @Html.ActionLink("Edit", "Edit", new { id = item.JobCategoryID }, new { @class = "genric-btn primary" })
+
                     </div>
                 </div>
 

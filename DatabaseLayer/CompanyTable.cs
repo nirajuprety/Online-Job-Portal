@@ -17,7 +17,6 @@ namespace DatabaseLayer
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public CompanyTable()
         {
-            this.EventTables = new HashSet<EventTable>();
             this.PostJobTables = new HashSet<PostJobTable>();
         }
     
@@ -31,8 +30,6 @@ namespace DatabaseLayer
         public string Description { get; set; }
     
         public virtual UsersTable UsersTable { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<EventTable> EventTables { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PostJobTable> PostJobTables { get; set; }
     }

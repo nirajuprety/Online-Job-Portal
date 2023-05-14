@@ -1,0 +1,70 @@
+﻿@model DatabaseLayer.JobCategoryTable
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<div class="section-top-border">
+    <div class="row">
+        <div class="col-lg-7 col-md-7">
+            <h3 class="mb-30">Create Job Categories</h3>
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="mt-4">
+
+                @Html.EditorFor(model => model.JobCategory, new
+                {
+                    htmlAttributes = new
+                    {
+                        @class = "form-control single-input",
+               @type = "text",
+               @name = "job_Category",
+               @placeholder = "Job Category",
+               @onfocus = "this.placeholder = ''",
+               @onblur = "this.placeholder = 'Job Category'",
+               @required = "true"
+                    }
+                })
+                @Html.ValidationMessageFor(model => model.JobCategory, "", new { @class = "text-danger" })
+
+            </div>
+            <div class="mt-4">
+
+                @Html.EditorFor(model => model.Description, new
+                {
+                    htmlAttributes = new
+                    {
+                        @class = "form-control single-input",
+               @type = "text",
+               @name = "description",
+               @placeholder = "Jpb Description",
+               @onfocus = "this.placeholder = ''",
+               @onblur = "this.placeholder = 'Job Description'",
+               @required = "true"
+                    }
+                })
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+
+            </div>
+
+            <div class="form-group mt-4">
+
+                <input type="submit" value="Save" class="genric-btn primary-border e-large" , style="float :right;" />
+
+
+            </div>
+        </div>
+
+            }
+            <div>
+            </div>
+
+        </div>
+    </div>
+</div>

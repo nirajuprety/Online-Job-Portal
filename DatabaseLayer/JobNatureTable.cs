@@ -12,21 +12,17 @@ namespace DatabaseLayer
     using System;
     using System.Collections.Generic;
     
-    public partial class JobTable
+    public partial class JobNatureTable
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public JobTable()
+        public JobNatureTable()
         {
             this.PostJobTables = new HashSet<PostJobTable>();
         }
     
-        public int JobID { get; set; }
-        public int JobCategoryID { get; set; }
-        public string JobTitle { get; set; }
-        public string JobRequirements { get; set; }
-        public string JobDetails { get; set; }
+        public int JobNatureID { get; set; }
+        public string JobNature { get; set; }
     
-        public virtual JobCategoryTable JobCategoryTable { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PostJobTable> PostJobTables { get; set; }
     }

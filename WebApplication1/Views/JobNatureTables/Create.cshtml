@@ -1,45 +1,45 @@
-﻿@model DatabaseLayer.CountryTable
+﻿
+@model DatabaseLayer.JobNatureTable
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Create";
 }
 
 <div class="section-top-border">
     <div class="row">
         <div class="col-lg-7 col-md-7">
-            <h3 class="mb-30">Edit Cities @Html.ActionLink("New City", "Create", null, new { @class="btn btn-default", @style="float : right"})</h3>
+            <h3 class="mb-30">Create Job Nature</h3>
             @using (Html.BeginForm())
             {
                 @Html.AntiForgeryToken()
 
                 <div class="form-horizontal">
-                    <h4>CountryTable</h4>
-                    <hr />
+                   
                     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                    @Html.HiddenFor(model => model.CountryID)
 
                     <div class="mt-4">
 
-                        @Html.EditorFor(model => model.Country, new
+                        @Html.EditorFor(model => model.JobNature, new
                         {
                             htmlAttributes = new
                             {
                                 @class = "form-control single-input",
                        @type = "text",
-                       @name = "first_name",
-                       @placeholder = "First Name",
+                       @name = "job_Nature",
+                       @placeholder = "Job Nature",
                        @onfocus = "this.placeholder = ''",
-                       @onblur = "this.placeholder = 'First Name'",
+                       @onblur = "this.placeholder = 'Job Nature'",
                        @required = "true"
                             }
                         })
-                        @Html.ValidationMessageFor(model => model.Country, "", new { @class = "text-danger" })
+                        @Html.ValidationMessageFor(model => model.JobNature, "", new { @class = "text-danger" })
+
                     </div>
 
                     <div class="form-group mt-4">
 
-                        <input type="submit" value="Update" class="genric-btn primary-border e-large", style="float :right;"/>
-                        @Html.ActionLink("Back to List", "Index", null ,new {@class="btn btn-default", @style="float:left"})
+                        <input type="submit" value="Save" class="genric-btn primary-border e-large" , style="float :right;" />
+
 
                     </div>
                 </div>
@@ -51,5 +51,4 @@
         </div>
     </div>
 </div>
-
 

@@ -62,16 +62,10 @@
     <Compile Include="CountryTable.cs">
       <DependentUpon>JobPortalDbModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="CurrentJobStatusTable.cs">
-      <DependentUpon>JobPortalDbModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="EducationTable.cs">
       <DependentUpon>JobPortalDbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EmployeesTable.cs">
-      <DependentUpon>JobPortalDbModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EventTable.cs">
       <DependentUpon>JobPortalDbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="JobApplyStatusTable.cs">
@@ -81,6 +75,9 @@
       <DependentUpon>JobPortalDbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="JobCategoryTable.cs">
+      <DependentUpon>JobPortalDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JobNatureTable.cs">
       <DependentUpon>JobPortalDbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="JobPortalDbModel.Context.cs">
@@ -98,10 +95,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>JobPortalDbModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="JobStatusTable.cs">
+    <Compile Include="JobRequirementDetailTable.cs">
       <DependentUpon>JobPortalDbModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="JobTable.cs">
+    <Compile Include="JobRequirementTable.cs">
+      <DependentUpon>JobPortalDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JobStatusTable.cs">
       <DependentUpon>JobPortalDbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="LanguageTable.cs">
@@ -125,32 +125,30 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config" />
     <EntityDeploy Include="JobPortalDbModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>JobPortalDbModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.Config" />
     <None Include="JobPortalDbModel.edmx.diagram">
       <DependentUpon>JobPortalDbModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="JobPortalDbModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>JobPortalDbModel.Context.cs</LastGenOutput>
       <DependentUpon>JobPortalDbModel.edmx</DependentUpon>
+      <LastGenOutput>JobPortalDbModel.Context.cs</LastGenOutput>
     </Content>
     <Content Include="JobPortalDbModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>JobPortalDbModel.edmx</DependentUpon>
       <LastGenOutput>JobPortalDbModel.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

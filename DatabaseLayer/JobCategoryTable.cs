@@ -18,7 +18,6 @@ namespace DatabaseLayer
         public JobCategoryTable()
         {
             this.EmployeesTables = new HashSet<EmployeesTable>();
-            this.JobTables = new HashSet<JobTable>();
             this.PostJobTables = new HashSet<PostJobTable>();
         }
     
@@ -28,8 +27,6 @@ namespace DatabaseLayer
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<EmployeesTable> EmployeesTables { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<JobTable> JobTables { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PostJobTable> PostJobTables { get; set; }
     }
