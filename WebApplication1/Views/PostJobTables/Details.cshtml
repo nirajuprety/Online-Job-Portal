@@ -1,0 +1,138 @@
+﻿@model DatabaseLayer.PostJobTable
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PostJobTable</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.JobTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JobTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JobDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JobDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MinSalary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MinSalary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxSalary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxSalary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vacancy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vacancy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplicationLastDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApplicationLastDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JobRequirementID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JobRequirementID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyTable.CompanyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyTable.CompanyName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JobCategoryTable.JobCategory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JobCategoryTable.JobCategory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JobNatureTable.JobNature)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JobNatureTable.JobNature)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JobStatusTable.JobStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JobStatusTable.JobStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UsersTable.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UsersTable.UserName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PostJobID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

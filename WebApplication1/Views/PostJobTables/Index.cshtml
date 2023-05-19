@@ -1,0 +1,117 @@
+﻿@model IEnumerable<DatabaseLayer.PostJobTable>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.JobTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JobDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MinSalary)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaxSalary)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Location)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Vacancy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PostDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ApplicationLastDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JobRequirementID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CompanyTable.CompanyName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JobCategoryTable.JobCategory)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JobNatureTable.JobNature)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JobStatusTable.JobStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UsersTable.UserName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MinSalary)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaxSalary)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Location)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Vacancy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PostDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ApplicationLastDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobRequirementID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CompanyTable.CompanyName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobCategoryTable.JobCategory)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobNatureTable.JobNature)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobStatusTable.JobStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UsersTable.UserName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PostJobID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PostJobID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PostJobID })
+        </td>
+    </tr>
+}
+
+</table>

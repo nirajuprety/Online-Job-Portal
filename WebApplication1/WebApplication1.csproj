@@ -277,6 +277,7 @@
     <Compile Include="Controllers\JobCategoryTablesController.cs" />
     <Compile Include="Controllers\JobNatureTablesController.cs" />
     <Compile Include="Controllers\JobRequirementTablesController.cs" />
+    <Compile Include="Controllers\PostJobTablesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -371,6 +372,11 @@
     <Content Include="Views\JobRequirementTables\Create.cshtml" />
     <Content Include="Views\JobRequirementTables\Edit.cshtml" />
     <Content Include="Views\JobRequirementTables\Index.cshtml" />
+    <Content Include="Views\PostJobTables\Create.cshtml" />
+    <Content Include="Views\PostJobTables\Delete.cshtml" />
+    <Content Include="Views\PostJobTables\Details.cshtml" />
+    <Content Include="Views\PostJobTables\Edit.cshtml" />
+    <Content Include="Views\PostJobTables\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
