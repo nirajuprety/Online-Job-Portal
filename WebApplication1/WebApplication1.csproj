@@ -272,12 +272,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CompanyTablesController.cs" />
     <Compile Include="Controllers\CountryTablesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\JobCategoryTablesController.cs" />
     <Compile Include="Controllers\JobNatureTablesController.cs" />
     <Compile Include="Controllers\JobRequirementTablesController.cs" />
     <Compile Include="Controllers\PostJobTablesController.cs" />
+    <Compile Include="Controllers\UserTypeTablesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -377,6 +379,16 @@
     <Content Include="Views\PostJobTables\Details.cshtml" />
     <Content Include="Views\PostJobTables\Edit.cshtml" />
     <Content Include="Views\PostJobTables\Index.cshtml" />
+    <Content Include="Views\CompanyTables\Create.cshtml" />
+    <Content Include="Views\CompanyTables\Delete.cshtml" />
+    <Content Include="Views\CompanyTables\Details.cshtml" />
+    <Content Include="Views\CompanyTables\Edit.cshtml" />
+    <Content Include="Views\CompanyTables\Index.cshtml" />
+    <Content Include="Views\UserTypeTables\Create.cshtml" />
+    <Content Include="Views\UserTypeTables\Delete.cshtml" />
+    <Content Include="Views\UserTypeTables\Details.cshtml" />
+    <Content Include="Views\UserTypeTables\Edit.cshtml" />
+    <Content Include="Views\UserTypeTables\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

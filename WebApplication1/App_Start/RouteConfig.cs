@@ -18,6 +18,21 @@ namespace WebApplication1
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            //add some routing links
+            //routes.MapRoute(
+            //    name: "",
+            //    url: "{controller}/{action}/{id}",
+            //    defaults: new { controller = "JobCategory", action = "Index", id = UrlParameter.Optional }
+            //);
+
+            //add another routing
+            //routes.MapRoute(
+            //    name: "Default",
+            //    url: "{controller}/{action}/{id}",
+            //    defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            //);
         }
     }
 }
+    

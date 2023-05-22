@@ -1,0 +1,35 @@
+﻿@model IEnumerable<DatabaseLayer.UserTypeTable>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="section-top-border col-md-7">
+    <h3 class="mb-30">All User types</h3>
+    <div class="progress-table-wrap" style="overflow-x: hidden;">
+        <div class="progress-table table-sm">
+            <div class="table-head">
+                <div class="serial">#</div>
+                <div class="country">UserType Name</div>
+                <div class="visit">Actions</div>
+            </div>
+            @{
+                var counter = 1;
+            }
+
+            @foreach (var item in Model)
+            {
+                <div class="table-row">
+                    <div class="serial">@counter.ToString("D2")</div>
+                    <div class="country">@Html.DisplayFor(modelItem => item.UserTypeName)</div>
+                    <div class="country">
+                        @Html.ActionLink("Edit", "Edit", new { id = item.UserTypeID }, new { @class = "genric-btn primary" }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.UserTypeID}, new { @class = "genric-btn danger" })
+                    </div>
+                </div>
+
+                counter++;
+            }
+        </div>
+    </div>
+</div>
